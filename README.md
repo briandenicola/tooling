@@ -8,3 +8,6 @@ They are standalone & can be run at any time, and re-running them will just inst
 Where binaries are downloaded and un-tarred directly, they will be placed in `$HOME/.local/bin`
 
 Any scripts which fetch binaries directly will accept a version parameter, if not supplied the latest will be located and installed.
+
+# Reference 
+[benc-uk](https://github.com/benc-uk/tools-install)
