@@ -4,7 +4,7 @@ set -e
 VERSION="latest"
 INSTALL_DIR=${2:-"$HOME/.local/bin"}
 CMD=kn
-NAME="KNative"
+NAME="Knative"
 
 echo -e "\e[34m»»» 📦 \e[32mInstalling \e[33m$NAME \e[35m$VERSION\e[0m ..."
 
