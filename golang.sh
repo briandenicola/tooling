@@ -18,7 +18,7 @@ curl -fsS https://dl.google.com/go/go${VERSION}.linux-amd64.tar.gz -o golang.tar
 sudo tar -xvf golang.tar.gz
 sudo rm -rf /usr/local/go
 rm -rf /tmp/golang.tar.gz
-sudo mv go /usr/local
+sudo mv go /usr/local/bin
 
 echo -e "\n\e[34m»»» 💾 \e[32mInstalled to: \e[33m$(which $CMD)"
 echo -e "\e[34m»»» 💡 \e[32mVersion details: \e[39m$($CMD version)"
