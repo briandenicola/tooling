@@ -11,7 +11,7 @@ INSTALL_DIR=${2:-"$HOME/.local/bin"}
 CMD=kustomize
 NAME="kustomize"
 
-curl -sL "https://github.com/kubernetes-sigs/kustomize/releases/download/kustomize%2Fv4.1.3/kustomize_v4.1.3_linux_amd64.tar.gz" -o /tmp/kustomize.tar.gz
+curl -sL "https://github.com/kubernetes-sigs/kustomize/releases/download/kustomize%2F${VERSION}/kustomize_${VERSION}_linux_amd64.tar.gz" -o /tmp/kustomize.tar.gz
 tar -xf /tmp/kustomize.tar.gz -C /tmp kustomize
 mkdir -p $INSTALL_DIR
 sudo mv /tmp/kustomize $INSTALL_DIR
