@@ -1,7 +1,7 @@
 #!/bin/bash 
 set -e 
 
-VERSION=${1:-"3"}
+VERSION=${1:-"4"}
 INSTALL_DIR=${2:-"$HOME/.local/bin"}
 CMD=func
 NAME="Azure Functions Core Tools"
@@ -15,7 +15,7 @@ sudo dpkg -i /tmp/packages-microsoft-prod.deb
 rm -f /tmp/packages-microsoft-prod.deb
 
 sudo apt-get update -qq
-sudo apt-get install -y -qq azure-functions-core-tools-3
+sudo apt-get install -y -qq azure-functions-core-tools-4
 
 echo -e "\n\e[34m»»» 💾 \e[32mInstalled to: \e[33m$(which $CMD)"
 echo -e "\e[34m»»» 💡 \e[32mVersion details: \e[39m$($CMD --version)"
