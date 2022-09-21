@@ -7,7 +7,7 @@ get_latest_release() {
 
 VERSION=${1:-"$(get_latest_release istio/istio)"}
 INSTALL_DIR=${2:-"$HOME/.local/bin"}
-CMD=istio
+CMD=istioctl
 NAME="istio"
 
 echo -e "\e[34m»»» 📦 \e[32mInstalling \e[33m$NAME \e[35mv$VERSION\e[0m ..."
