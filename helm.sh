@@ -16,7 +16,7 @@ echo -e "\e[34m»»» 📦 \e[32mInstalling \e[33m$NAME \e[35mv$VERSION\e[0m ...
 curl -fsS "https://get.helm.sh/helm-v$VERSION-linux-amd64.tar.gz" -o /tmp/helm.tar.gz
 tar -zxf /tmp/helm.tar.gz -C /tmp linux-amd64/helm
 mkdir -p $INSTALL_DIR
-sudo mv /tmp/linux-amd64/helm $INSTALL_DIR
+mv /tmp/linux-amd64/helm $INSTALL_DIR
 rm -f /tmp/helm.tar.gz
 rm -rf /tmp/linux-amd64
 
