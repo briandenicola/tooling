@@ -16,5 +16,5 @@ curl -sLO  https://github.com/${PROJECT}/releases/download/v${VERSION}/argocd-li
 mv argocd-linux-amd64 ${INSTALL_DIR}/${CMD}
 chmod 755 ${INSTALL_DIR}/${CMD}
 
-echo "\n\e[34m»»» 💾 \e[32mInstalled to: \e[33m$(which ${CMD})"
-echo "\e[34m»»» 💡 \e[32mVersion details: \e[39m$(${CMD} version --client)"
+echo -e "\n\e[34m»»» 💾 \e[32mInstalled to: \e[33m$(which ${CMD})"
+echo -e "\e[34m»»» 💡 \e[32mVersion details: \e[39m$(${CMD} version --client)"
