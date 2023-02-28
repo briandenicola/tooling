@@ -13,9 +13,8 @@ NAME="k9s"
 
 echo -e "\e[34m»»» 📦 \e[32mInstalling \e[33m$NAME \e[35mv$VERSION\e[0m ..."
 
-curl -sSL "https://github.com/derailed/k9s/releases/download/v${VERSION}/k9s_Linux_x86_64.tar.gz" -o /tmp/k9s.tar.gz
-tar -xf /tmp/k9s.tar.gz -C /tmp k9s 
-mkdir -p $INSTALL_DIR
+curl -sSL "https://github.com/derailed/k9s/releases/download/v${VERSION}/k9s_Linux_amd64.tar.gz" -o /tmp/k9s.tar.gz
+tar -xf /tmp/k9s.tar.gz -C /tmp k9s
 sudo mv /tmp/k9s $INSTALL_DIR
 rm -f /tmp/k9s.tar.gz
 rm -rf tmp/k9s
