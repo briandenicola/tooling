@@ -21,4 +21,4 @@ rm -f /tmp/istio-${VERSION}.tar.gz
 rm -rf tmp/istio-${VERSION}
 
 echo -e "\n\e[34m»»» 💾 \e[32mInstalled to: \e[33m$(which $CMD)"
-echo -e "\e[34m»»» 💡 \e[32mVersion details: \n\e[39m$($CMD version)"
+echo -e "\e[34m»»» 💡 \e[32mVersion details: \n\e[39m$($CMD version --remote=false)"
