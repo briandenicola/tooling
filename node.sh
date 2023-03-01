@@ -1,12 +1,12 @@
 #!/bin/bash
-VERSION=${1:-"14"}
+VERSION=${1:-"16"}
 INSTALL_DIR=${2:-"$HOME/.local/bin"}
 CMD=node
 NAME="Node.js"
 
 echo -e "\e[34m»»» 📦 \e[32mInstalling \e[33m$NAME \e[35mv$VERSION\e[0m ..."
 
-curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 sudo apt install -y nodejs
 sudo npm install -g npm@latest
 
