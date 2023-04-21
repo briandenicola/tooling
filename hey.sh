@@ -13,4 +13,3 @@ curl -sSL https://hey-release.s3.us-east-2.amazonaws.com/hey_linux_amd64 -o $INS
 chmod +x $INSTALL_DIR/hey
 
 echo -e "\n\e[34m»»» 💾 \e[32mInstalled to: \e[33m$(which $CMD)"
-echo -e "\e[34m»»» 💡 \e[32mVersion details: \e[39m$($CMD)"
