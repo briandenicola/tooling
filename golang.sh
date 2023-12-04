@@ -5,7 +5,7 @@ get_latest_release() {
   curl --silent "https://golang.org/dl/" | grep -Po -m 1 '(\d+\.\d+\.\d+)\.linux-amd64' | sed 's/.linux-amd64//'
 }
 
-VERSION=1.19
+VERSION=1.20
 INSTALL_DIR=${2:-"$HOME/.local/bin"}
 CMD=go
 NAME="Go Language"
