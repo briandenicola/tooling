@@ -11,4 +11,4 @@ curl -sL https://cli.upbound.io | sh
 mv up ${INSTALL_DIR}
 
 echo -e "\n\e[34m»»» 💾 \e[32mInstalled to: \e[33m$(which $CMD)"
-echo -e "\e[34m»»» 💡 \e[32mVersion details: \e[39m$($CMD --version)"
+echo -e "\e[34m»»» 💡 \e[32mVersion details: \e[39m$($CMD version)"
