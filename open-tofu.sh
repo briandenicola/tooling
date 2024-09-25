@@ -14,8 +14,9 @@ NAME=OpenTofu
 
 #https://github.com/opentofu/opentofu/releases/download/v1.6.2/tofu_1.6.2_linux_amd64.zip
 
-echo -e "\e[34m»»» 📦 \e[32mInstalling \e[33m$NAME v$VERSION\e[0m ..."
-curl -sSL "https://github.com/${REPO}/releases/download/v${VERSION}/tofu_${VERSION}_linux_amd64.zip" -o /tmp/${CMD}.zip
+echo -e "\n\e[34m»»» 💾 \e[32mDownloading ${NAME} Version ${VERSION}"
+
+curl -sSL "https://github.com/${REPO}/releases/download/v${VERSION}/${CMD}_${VERSION}_linux_amd64.zip" -o /tmp/${CMD}.zip
 unzip /tmp/${CMD}.zip -d /tmp > /dev/null
 mv /tmp/${CMD} $INSTALL_DIR
 rm -f /tmp/${CMD}.zip

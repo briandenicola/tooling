@@ -11,9 +11,9 @@ INSTALL_DIR=${2:-"$HOME/.local/bin"}
 CMD=packer
 NAME=Packer
 
-echo -e "\e[34m»»» 📦 \e[32mInstalling \e[33m$NAME v$VERSION\e[0m ..."
+echo -e "\n\e[34m»»» 💾 \e[32mDownloading ${NAME} Version ${VERSION}"
 
-curl -sSL "https://releases.hashicorp.com/packer/${VERSION}/packer_${VERSION}_linux_amd64.zip" -o /tmp/packer.zip
+curl -sSL "https://releases.hashicorp.com/packer/${VERSION}/${CMD}_${VERSION}_linux_amd64.zip" -o /tmp/packer.zip
 unzip /tmp/packer.zip -d /tmp > /dev/null
 mv /tmp/packer $INSTALL_DIR
 rm -f /tmp/packer.zip
