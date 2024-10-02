@@ -12,7 +12,7 @@ INSTALL_DIR=${2:-"$HOME/.local/bin"}
 CMD=sqlcmd
 NAME="sqlcmd"
 
-curl -Ls "https://github.com/${REPO}/releases/download/v${VERSION}/sqlcmd-v${VERSION}-linux-amd64.tar.bz2" -o /tmp/${CMD}.tar.bz2
+curl -Ls "https://github.com/${REPO}/releases/download/v${VERSION}/sqlcmd-linux-amd64.tar.bz2" -o /tmp/${CMD}.tar.bz2
 tar -jxf /tmp/${CMD}.tar.bz2 -C /tmp 
 mv /tmp/${CMD} $INSTALL_DIR/${CMD}
 
