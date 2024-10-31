@@ -1,14 +1,13 @@
 #!/bin/bash 
 set -e
 
-VERSION=${1:-"8.0"}
+VERSION=${1:-"8"}
 CMD=dotnet
 NAME="Dotnet Core SDK"
 
 echo -e "\e[34m»»» 📦 \e[32mInstalling \e[33m$NAME \e[35mv$VERSION\e[0m ..."
-wget https://dot.net/v1/dotnet-install.sh -O /tmp/dotnet-install.sh
-bash /tmp/dotnet-install.sh --version latest
-
+sudo apt update
+sudo apt install dotnet${VERSION} -y
 # Download the Microsoft repository GPG keys
 #wget -q https://packages.microsoft.com/config/ubuntu/$(lsb_release -rs)/packages-microsoft-prod.deb -O /tmp/packages-microsoft-prod.deb
 # Register the Microsoft repository GPG keys
