@@ -13,9 +13,9 @@ REPO=microsoft/edit
 VERSION=${1:-"$(get_latest_release ${REPO})"}
 INSTALL_DIR=${2:-"$HOME/.local/bin"}
 OUTPUT_FILE=/tmp/${CMD}-x86_64-linux-gnu.tar.zst
+URL="https://github.com/${REPO}/releases/download/v${VERSION}/${CMD}-${VERSION}-x86_64-linux-gnu.tar.zst"
 
-
-curl -Ls "https://github.com/${REPO}/releases/download/v${VERSION}/${CMD}-${VERSION}-x86_64-linux-gnu.tar.zst" -o ${OUTPUT_FILE}
+curl -Ls ${URL} -o ${OUTPUT_FILE}
 mkdir -p $INSTALL_DIR
 tar --zstd -xf ${OUTPUT_FILE} -C /tmp
 mv /tmp/${CMD} $INSTALL_DIR/${CMD}
